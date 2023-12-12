@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h2>BOOKSHELF APP</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="top">
+            <div class="form-container">
+                <h2 class="title">Tambah Buku Baru</h2>
+                <form id = "form" action="#" >
+                    <div class="form-group">
+                        <label for="title">Judul</label>
+                        <input type="text" name="title" id ="title" required>
+                        
+                    </div>
+                   <div class="row">
+                    <div class="form-group">
+                        <label for="author">Penulis</label>
+                        <input type="text" name="author" id="author" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Tahun</label>
+                        <input type="number" name="year" id="year" required>
+                       
+                    </div>
+                   </div>
+                   <div class="input_inline">
+                    <label for="check">Buku selesai dibaca</label>
+                    <input id="inputDone" type="checkbox" name="check" value ="yes">
+                </div>
+                   
+                   <input type="submit" value="submit" name="Submit" class="btn-submit">
+                </form>
+            </div>
+
+            
+        </div>
+
+        <div class="bottom">
+            <div class="left-container">
+                <h2>Buku Sudah Dibaca</h2>
+                <div id="readedBooks"></div>
+            </div>
+            <div class="right-container">
+                <h2>Buku Belum Dibaca</h2>
+                <div id="unreadedBooks"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
